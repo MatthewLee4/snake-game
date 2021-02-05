@@ -1,7 +1,8 @@
 import React from 'react';
-import Nav from './Nav';
+import Nav from './components/Nav';
 import SnakeGame from './pages/SnakeGame';
 import About from './pages/About';
+import Home from './pages/Home';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
@@ -18,11 +19,5 @@ function App() {
         </Router>
     )
 }
-
-const Home = () => (
-    <div>
-        <h1>Home Page</h1>
-    </div>
-);
 
 export default App;

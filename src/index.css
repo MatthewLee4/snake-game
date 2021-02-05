@@ -20,6 +20,13 @@ nav {
   text-decoration: none;
 }
 
+/* default css for pages */
+.container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
 
 /* Snake Game */
 .game-area {
