@@ -36,6 +36,7 @@ class SnakeGame extends Component {
   } 
 
   onKeyDown = (e) => {
+    e.preventDefault()
     e = e || window.event;
     switch (e.keyCode) {
       case 38:
