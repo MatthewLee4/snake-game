@@ -1,7 +1,8 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { increment, decrement, player_name } from '../actions'
+import { increment, decrement, player_name } from '../actions';
 import { useState } from 'react';
+import { Button } from 'react-bootstrap';
 
 function Home() {
     const counter = useSelector(state => state.counter);
