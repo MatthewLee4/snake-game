@@ -36,6 +36,7 @@ class SnakeGame extends Component {
   } 
 
   onKeyDown = (e) => {
+    e.preventDefault()
     e = e || window.event;
     e.preventDefault(); //prevents page from scrolling when arrow key is pressed
     switch (e.keyCode) {

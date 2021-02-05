@@ -1,7 +1,10 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { increment, decrement, player_name } from '../actions'
+import { increment, decrement, player_name } from '../actions';
 import { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from 'react-bootstrap';
+
 
 function Home() {
     const counter = useSelector(state => state.counter);
@@ -20,15 +23,15 @@ function Home() {
     }
     return (
     <div className="container">
-        <h1>Welcome to SnakeGame!</h1>
+        <h1>Welcome {playerName} to SnakeGame!</h1>
             <div>
-
+            
             <form>
                 <label for="name">What's your name?</label>
                 <br></br>
                 <input type="text" id="name" name="name" value={playerName} placeholder="Type your name here!" onChange={handleChange}></input>
                 <br></br>
-                <button onClick={handleClick}>Submit</button>
+                <Button onClick={handleClick}>Submit</Button>
             </form>
 
            
