@@ -17,3 +17,10 @@ export const player_name = (nm) => {
         payload: nm
     }
 }
+
+export const snake_color = (color) => {
+    return {
+        type: 'COLOR',
+        payload: color
+    }
+}

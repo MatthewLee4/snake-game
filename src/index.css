@@ -10,7 +10,14 @@ nav {
   border-bottom: outset;
 }
 
+#greeting {
+  display: flex;
+}
 
+#player_name {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
 /* Snake Game */
 .game-area {
